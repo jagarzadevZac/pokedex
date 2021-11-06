@@ -1,0 +1,164 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.center-image{
+  display:flex;
+  justify-content:center; /* horizontally center */
+  align-items:center;    /* vertically center */
+  height:100px;
+  width:100px;
+}
+
+.panding-image{
+  padding:60px
+}
+
+.player-pokemon{
+  color: #f2f4ff;
+  text-align: center;
+  font-family: 'Roboto'
+}
+
+.level-text{
+  color: #f9fafb;
+  text-align: center;
+  opacity: 60%;
+  font-family: 'Roboto'
+}
+
+.description-text{
+  color: #f9fafb;
+  text-align: center;
+  opacity: 80%;
+  font-family: 'Roboto'
+}
+
+.round{
+  padding: 8px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 10px;
+  margin: 2px 2px;
+  border-radius: 20px;
+  background: #566cd6;
+  border-color: #566cd6;
+  border: #566cd6;
+  width: 30%;
+}
+
+/* input[type=text]{
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+   border-radius: 20px;
+   border: 1px solid #566cd6;
+   color: gray;
+   width: 250px;
+   height: 30px;
+   padding-right: 50px;
+  }
+  
+input[type=text]:focus {
+   outline: none;
+   border: 1px solid #a0d18c;
+   color: black;
+}
+
+input[type="submit"] {
+  margin-left: -70px;
+  height: 30px;
+  width: 50px;
+  background: #566cd6;
+  border-color: #566cd6;
+  border: #566cd6;
+  color: #f2f4ff;
+  -webkit-appearance: none;
+  border-radius: 20px;
+}
+ */
+
+@media only screen and (max-width: 760px) {
+  .pc{ display: none; }
+}
+
+@media only screen and (min-width: 800px) {
+  .mobil{ display:none; }
+}
+
+.userInfoPc{
+  background:#566cd6;
+  height:100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.ButtonLogOut{
+  background-color:#8895d5;
+  width: 100%;
+  border: 10px;
+}
+
+.imgLogOut{
+  float:left;
+}
+
+.titleLogOut{
+  text-align: center;
+}
+
+
+.userinfoMobil{
+  padding: 10px;
+}
+
+.userMenuMobil{
+  text-align: left;
+}
+
+.userImageTitle{
+  text-align: center;
+}
+
+.noMatch{
+  text-align:center;
+}
+
+.cardInfo{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+}
+
