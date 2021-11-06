@@ -4,9 +4,13 @@ import { useEffect, useState } from "react";
 import BadgeTypePokemonInfo from "./BadgeTypePokemon";
 
 const DetailsPokemon = ({id,name})=>{
-   
+    let namePokemon= "";
+    if(name !== ""){
+        namePokemon=name.toUpperCase();
+        console.log(namePokemon);
+    }
     const [details, setDetails] = useState([]);
-    const url = name !=="" ? `https://pokeapi.co/api/v2/pokemon/${name}/` : `https://pokeapi.co/api/v2/pokemon/${id}/` ;
+    const url = name !=="" ? `https://pokeapi.co/api/v2/pokemon/${name.toLowerCase()}/` : `https://pokeapi.co/api/v2/pokemon/${id}/` ;
     const loadInfoPokemon =()=>{
         axios.get(url)
             .then(result => {

@@ -5,7 +5,7 @@ const CardInfoPokemon =({id,name,image,types,getIdPokemon,goSearch})=>{
     
     return(     
     <div>
-        <Card onClick={()=>{getIdPokemon(id); goSearch()}} style={{width:"90%"}} >
+        <Card onClick={()=>{getIdPokemon(id); goSearch()}} style={{width:"95%"}} >
             <CardBody className="cardInfo">
                 <CardTitle 
                     tag="h5" 
